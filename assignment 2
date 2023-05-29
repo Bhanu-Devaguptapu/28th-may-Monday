@@ -1,0 +1,20 @@
+// insertion of elements
+#include<stdio.h>
+int main(){
+	int arr[]={1,2,3,4,5};
+	int i,len,ind,ele;
+	len=sizeof(arr)/sizeof(int);
+	scanf("%d",&ind);
+	scanf("%d",&ele);
+	if(ind>=0 && ind<len){
+	for(i=len;i>ind;i--)
+		arr[i]=arr[i-1];
+		arr[ind]=ele;
+		len++;
+	for(i=0;i<len;i++){
+		printf("%d",arr[i]);
+	}}
+	else
+	printf("Wrong input!");
+	
+}
